@@ -142,7 +142,7 @@ jobs:
 
       - name: Build app image (fallback — not in registry yet)
         if: steps.pull.outcome == 'failure' && steps.pull-latest.outcome == 'failure'
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           load: true
@@ -210,7 +210,7 @@ jobs:
 
       - name: Build app image (fallback — uses GHA layer cache)
         if: steps.pull.outcome == 'failure' && steps.pull-latest.outcome == 'failure'
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: .
           load: true
