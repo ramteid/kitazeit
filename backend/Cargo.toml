@@ -14,7 +14,7 @@ serde_json = "1"
 sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio-rustls", "postgres", "chrono", "macros", "migrate"] }
 chrono = { version = "0.4", features = ["serde"] }
 argon2 = "0.5"
-password-hash = { version = "0.5", features = ["getrandom"] }
+password-hash = { version = "0.6", features = ["getrandom"] }
 rand = "0.10"
 subtle = "2"
 sha2 = "0.11"
